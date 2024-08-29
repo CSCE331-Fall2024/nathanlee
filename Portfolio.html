@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Page</title>
+    <link id="theme" href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    
+    <header class = "header">
+        
+        <nav class = "nav">
+            <a href = "/resume/index.html">About Me</a>   
+            <a href = "/resume/Portfolio.html">Portfolio</a>
+            <a href = "/resume/Qual.html">Qualifications</a>
+            <a href = "/resume/Service.html">Service</a>
+            <a href = "/resume/AI.html">AI-Page</a>
+            <a><button id="flip-button">Flip Coin </button></a>
+            <span></span>
+        </nav>
+        
+    </header>
+    <header class = "header2">
+        <div class="container">
+            <div class="coin" id="coin">
+                <div class="heads">
+                    <img src="heads.svg" alt="Heads">
+                </div>
+                <div class="tails">
+                    <img src="tails.svg" alt="Tails">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Text Box Section -->
+    
+    <div class = "wrapper1">
+        <img src ="aggie_codingclub_logo.jpg" alt ="">
+        <div class="text-box1">
+            <h2>Aggies Compute</h2>
+            <p>This project was designed to assist students with computer-science-related math, similar to applications such as Wolfram Alpha. </p> 
+            <p>With the help of like-minded programmers, we created multiple math algorithms and implemented them into a website. </p>
+            <p>This collaborative project helped me develop problem-solving, teamwork and introduced me to new coding concepts and languages.</p>
+            <p>Language(s) used: React, Tailwind/CSS(style), Typescript, Apollo-client (Connection)</p>
+            <div class = "PLinks">
+                    <p>
+                        <a href="https://www.aggiecodingclub.com" target="_blank">Link: Aggie Coding Club</a>
+                    </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "wrapper2">
+        <img src ="harris1.jpg" alt ="">
+        <div class="text-box2">
+            <h2>Image Scaling / Image Stitching Algorithm</h2>
+            <p>During this project, I created algorithms to scale individual images and stitch two images together. 
+                In this project, I bolstered my coding skill in C++ and further understood concepts such as 2D array manipulation, algorithms, and input/output streams. 
+                I expanded upon my knowledge of bilinear interpolation to implement the image scaling algorithm. 
+                Throughout this experience, I also gained an understanding of Harris's corner detection algorithm for the creation of the image stitching algorithm.
+            </p>
+            <p>Language(s) used: C++</p>
+            <div class = "PLinks">
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Harris_corner_detector" target="_blank">Link: Harris Corner Detection Algorithm</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "wrapper3">
+        <img src ="dungeon1.png" alt ="">
+        <div class="text-box3">
+            <h2>Dungeon Crawler Game</h2>
+            <p>In this project I developed a retro-style video game using concepts such as pointers and 2D dynamic arrays.</p>
+            <p>During the process of creating this video game, I sharpened my understanding of pointers, input/output streams, </p>
+            <p>file traversal, memory allocataion and resizing/editing 2D dynamic arrays without risk of memory leaks.</p>
+            <p>This project also helped me learn the importance of creating test/edge cases, as I created my own levels that tested</p>
+            <p>the accuracy, precision, and stability of the code.</p>
+            <p>Language(s) used: C++</p>
+        </div>
+    </div>
+    
+    <div class = "wrapper4">
+        <img src ="rackylogo.png" alt ="">
+        <div class="text-box4">
+            <h2>Custom Language Interpreter for "MUPL"</h2>
+            <p>This project is centered around "MUPL", a Made Up Programming Language (hence the name MUPL) that has the basic functionality 
+            of common coding languages. I created a functional, statically typed language with functions, closures, and many different data types.
+            Additionally, I made error handling, function calling, recursion, and let expressions all compatible for this custom language all using Racket as a foundation for my language.
+            Due to my deep understanding of programming language concepts, I created hall of fame functions and complex algorithms to test my "MUPL" language.
+            </p>
+            <p>Language(s) used: Racket, "MUPL"</p>
+        </div>
+    </div>
+
+    <div class = "wrapper5">
+        <img src ="tetriz.jpg" alt ="">
+        <div class="text-box4">
+            <h2>Tetris</h2>
+            <p>Using Ruby, I created the puzzle video game Tetris with a simple interface, buttons, and a score counter.</p>
+            <p>While working on this project, I developed my knowledge of Object Oriented Programming by working with classes, </p>
+            <p>subclasses, and dynamic dispatch.</p>
+            <p>Language(s) used: Ruby</p>
+            <div class = "PLinks">
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Tetris" target="_blank">Link: Tetris</a>
+                </p>
+        </div>
+        </div>
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
