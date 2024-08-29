@@ -46,3 +46,20 @@ function disable(){
     setTimeout(function(){ flip.disabled = false; }, 3000);
 }
 
+document.getElementById("navbutton").onclick = function() {
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.classList.contains("open")) {
+        
+        sidebar.classList.remove("open");
+
+    } 
+    else {
+        sidebar.classList.add("open");
+    }
+};
+
+document.getElementById("navbutton").onclick = function() {
+    var nav = document.querySelector("nav.nav");
+    nav.classList.toggle("close");
+};
+
