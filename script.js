@@ -8,6 +8,7 @@ flip.addEventListener("click", () => {
     coin.style.animation = "none";
 
     if(i) {
+
         setTimeout(function(){
             coin.style.animation = "headspin 3s forwards";
         }, 100);
@@ -22,6 +23,7 @@ flip.addEventListener("click", () => {
     } 
     
     else {
+
         setTimeout(function(){
             coin.style.animation = "tailspin 3s forwards";
         }, 100);
