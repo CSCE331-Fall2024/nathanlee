@@ -3,8 +3,16 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Page</title>
-    <link id="theme" href="style.css" rel="stylesheet" type="text/css" /> <!-- change back to href="style.css" -->
-
+    <link id="theme" href="style.css" rel="stylesheet" type="text/css" /> 
+    <script>
+       
+        (function() {
+            var themestore = localStorage.getItem("theme");
+            if (themestore) {
+                document.querySelector("link#theme").href = themestore;
+            }
+        })();
+    </script>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -16,11 +24,11 @@
         
         <button id="navbutton" class="navbtn">☰</button>
         <nav class = "nav">
-            <a href = "/resume/index.html">About Me</a>   
-            <a href = "/resume/Portfolio.html">Portfolio</a>
-            <a href = "/resume/Qual.html">Qualifications</a>
-            <a href = "/resume/Service.html">Service</a>
-            <a href = "/resume/AI.html">AI-Page</a>
+            <a href = "/index.html">About Me</a>   
+            <a href = "/Portfolio.html">Portfolio</a>
+            <a href = "/Qual.html">Qualifications</a>
+            <a href = "/Service.html">Service</a>
+            <a href = "/AI.html">AI-Page</a>
             <a><button id="flip-button">Flip Coin </button></a>
             <span></span>
         </nav>
@@ -134,6 +142,11 @@
                             This collaborative project helped me develop problem-solving, teamwork and introduced me to new coding concepts and languages.</br>
                             Language(s) used: React, Tailwind/CSS(style), Typescript, Apollo-client (Connection)
                         </p>
+                        <div class = "PLinks2">
+                            <p>
+                                <a href="https://www.aggiecodingclub.com" target="_blank">Link: Aggie Coding Club</a>
+                            </p>
+                    </div>
                     </article>
 
                     <article class = "port_sect">
@@ -147,6 +160,11 @@
                             Throughout this experience, I also gained an understanding of Harris's corner detection algorithm for the creation of the image stitching algorithm.</br>
                             Language(s) used: C++
                         </p>
+                        <div class = "PLinks2">
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/Harris_corner_detector" target="_blank">Link: Harris Corner Detection Algorithm</a>
+                            </p>
+                        </div>
                     </article>
 
                     <article class = "port_sect">
@@ -184,6 +202,11 @@
                             subclasses, and dynamic dispatch.</br>
                             Language(s) used: Ruby
                         </p>
+                        <div class = "PLinks2">
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/Tetris" target="_blank">Link: Tetris</a>
+                            </p>
+                        </div>
                     </article>
                 </div>
             </div>

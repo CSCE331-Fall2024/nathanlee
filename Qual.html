@@ -4,7 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualification-Page</title>
     <link id="theme" href="style.css" rel="stylesheet" type="text/css" />
-
+    <script>
+      
+      (function() {
+          var themestore = localStorage.getItem("theme");
+          if (themestore) {
+              document.querySelector("link#theme").href = themestore;
+          }
+      })();
+  </script>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -14,15 +22,15 @@
     
     <header class = "header">
       <button id="navbutton" class="navbtn">☰</button>
-        <nav class = "nav">
-            <a href = "/resume/index.html">About Me</a>   
-            <a href = "/resume/Portfolio.html">Portfolio</a>
-            <a href = "/resume/Qual.html">Qualifications</a>
-            <a href = "/resume/Service.html">Service</a>
-            <a href = "/resume/AI.html">AI-Page</a>
-            <a><button id="flip-button">Flip Coin</button></a>
-            <span></span>
-        </nav>
+      <nav class = "nav">
+        <a href = "/index.html">About Me</a>   
+        <a href = "/Portfolio.html">Portfolio</a>
+        <a href = "/Qual.html">Qualifications</a>
+        <a href = "/Service.html">Service</a>
+        <a href = "/AI.html">AI-Page</a>
+        <a><button id="flip-button">Flip Coin </button></a>
+        <span></span>
+    </nav>
         
       </header>
       <header class = "header2">
@@ -86,12 +94,37 @@
             <h2>Additional Information:</h2>
             <div class = "QLinks">
                 <p>
-                    <a href="https://www.firstinspires.org/robotics/ftc" target="_blank">Link: First Tech Challenge</a>
+                  <a href="https://www.firstinspires.org/robotics/ftc" target="_blank">Link: First Tech Challenge</a>
                 </p>
             </div>
         </div>
     </div>
-    
+    <div>
+      <section class="qual section" id="qual">
+          <div class="qual_container container">
+              <h2 class="qualtitle">RESUME / RESUME / RESUME / RESUME / RESUME / RESUME / RESUME / RESUME / RESUME /</h2>
+              <div>
+                  <article class="resume_sect">
+                      <img src="resume2.png" alt="image" class="resumeimg">
+                  </article>
+                  <h3 class="resumetitle">Technical areas of interest:</h3>
+                  <p class="resumedesc">
+                      - Artificial Intelligence/Machine Learning <br> 
+                      - Video Game Software Development <br>
+                      - Software Engineering <br>
+                      - Website Development <br>
+                      - Algorithms
+                  </p>
+                  <h3 class="resumetitle2">Additional Information:</h3>
+                  <div class="resumelinks">
+                      <p>
+                          <a href="https://www.firstinspires.org/robotics/ftc" target="_blank">Link: First Tech Challenge</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
 
     <!--Script-->
     <script src="script.js"></script>

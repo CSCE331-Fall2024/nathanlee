@@ -259,6 +259,8 @@ section#hero {
 section#hero2 {
     text-align: left;   
     align-items: left; 
+    background: linear-gradient(hsla(243, 98%, 51%, .3), transparent 50%);
+    background-color: rgba(255, 255, 255, 0.2); 
     
 }
 
@@ -315,7 +317,7 @@ body{
 
 .port_container {
     height: 80vh;
-    max-height: 70vh; /* Adjust this value based on how much of the screen you want it to occupy */
+    max-height: 70vh; 
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 20px;
@@ -356,7 +358,7 @@ body{
     padding: 0 6px;
 }
 
-/* Ensure the body remains static */
+
 body {
     overflow: hidden;
 }
@@ -422,7 +424,7 @@ body {
 
 
 .projtitle {
-    font-size: 2rem;
+    
     color: rgb(161, 253, 238);
     font-family: "Monaco",monospace;
     font-weight: lighter;
@@ -434,48 +436,166 @@ body {
     font-family: "Monaco",monospace;
     font-weight: lighter;
     padding: 0 6px;
+    
+}
+
+.PLinks2 a{
+    color: rgb(161, 253, 238);
+    text-decoration: none;
+    top: 80%;
+    font-family: "Monaco",monospace;
     font-size: 1rem;
 }
 
-
-/*Qualifications section*/
-
-.resume {
-    margin: 150px auto;
-    width: 90%;
-      
-}
-
-.resume img {
-    max-width: 900px;
-    float: right;
-    border: 3px solid #000000;
-    border-radius: 10px;
-    margin-right: 1px;
-}
-
-.resume-box {
-    color: #000000;
-}
-
-.resume-box h2 {
-    font-size: 92px;
-}
-
-.resume-box p {
-    font-size: 46px;
-}
-
-.QLinks a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    top: 80%;
-    font-size: 46px;
-}
-
-.QLinks a:hover {
+.PLinks2 a:hover {
     text-decoration: underline;
 }
+
+.resume {display: none;}
+
+/* Qualification Section */
+
+
+@media screen and (min-width: 601px) {
+    .qual {
+        position: relative;
+    }
+    
+    .qualtitle {
+        font-size: 2rem;
+        margin-bottom: 25px;
+        color: rgb(161, 253, 238);
+        font-family: "Monaco",monospace;
+        font-weight: lighter;
+        padding: 0 6px;
+    }
+    
+    
+    .qual_container {
+        height: 80vh; 
+        max-height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 20px;
+        width: 80%; 
+        position: relative;
+        border: 2px solid;
+        border-image: linear-gradient(45deg, #00c8ff, #b598ec) 1;
+        background-color: hsla(238, 50%, 20%, .4);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        padding: 5rem 1rem 2rem; 
+    }
+    
+    .qual_container::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    .resumeimg {
+        width: 100%; 
+        height: auto;
+        max-width: 60rem; 
+        position: relative; 
+        margin: 0 auto;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .qual {
+        position: relative;
+    }
+    
+    .qualtitle {
+        font-size: 2rem;
+        margin-bottom: 25px;
+        color: rgb(161, 253, 238);
+        font-family: "Monaco",monospace;
+        font-weight: lighter;
+        padding: 0 6px;
+    }
+    
+    
+    .qual_container {
+        height: 80vh; 
+        max-height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 20px;
+        width: 80%; 
+        position: relative;
+        border: 2px solid;
+        border-image: linear-gradient(45deg, #00c8ff, #b598ec) 1;
+        background-color: hsla(238, 50%, 20%, .4);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        padding: 5rem 2rem 2rem; 
+    }
+    
+    .qual_container::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    .resumeimg {
+        width: 100%;
+        height: auto;
+        max-width: 30rem;
+        position: relative; 
+        margin: 0 auto;
+    }
+
+    .resume_sect {
+        padding: 1rem;
+    }
+}
+
+.qual_container::-webkit-scrollbar-track {
+    background: rgb(44, 52, 90);
+    border-radius: 10px;
+}
+
+.qual_container::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #00c8ff, #b598ec);
+    border-radius: 0px;
+}
+
+.qual_container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #00c8ff, #b598ec);
+}
+
+.resume_sect {
+    margin-bottom: 20px; 
+    position: relative;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #00c8ff, #b598ec) 1;
+    background: linear-gradient(hsla(243, 98%, 51%, .3), transparent 50%);
+    padding: 2rem; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); 
+    width: 100%; 
+}
+
+.resumetitle, .resumetitle2, .resumedesc, .resumelinks a {
+    font-size: 1.5rem; 
+    color: rgb(161, 253, 238);
+    font-family: "Monaco", monospace;
+    font-weight: lighter;
+    padding: 0 6px;
+    display: block; 
+}
+
+.resumelinks a {
+    text-decoration: none;
+    font-size: 1.2rem; 
+    color: rgb(161, 253, 238);
+}
+
+.resumelinks a:hover {
+    text-decoration: underline;
+}
+
+
 
 /* Service Section */
 
@@ -498,7 +618,7 @@ body {
 
 .serv_container {
     height: 80vh;
-    max-height: 70vh; /* Adjust this value based on how much of the screen you want it to occupy */
+    max-height: 70vh; 
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 20px;
@@ -539,7 +659,7 @@ body {
     padding: 0 6px;
 }
 
-/* Ensure the body remains static */
+
 body {
     overflow: hidden;
 }
@@ -599,4 +719,16 @@ body {
     font-weight: lighter;
     padding: 0 6px;
     font-size: 1rem;
+}
+
+.SLinks2 a{
+    color: rgb(161, 253, 238);
+    text-decoration: none;
+    top: 80%;
+    font-family: "Monaco",monospace;
+    font-size: 1rem;
+}
+
+.SLinks2 a:hover {
+    text-decoration: underline;
 }

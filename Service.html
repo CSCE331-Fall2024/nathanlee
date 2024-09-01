@@ -4,7 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service-Page</title>
     <link id="theme" href="style.css" rel="stylesheet" type="text/css" />
-
+    <script>
+        
+        (function() {
+            var themestore = localStorage.getItem("theme");
+            if (themestore) {
+                document.querySelector("link#theme").href = themestore;
+            }
+        })();
+    </script>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -15,11 +23,11 @@
     <header class = "header">
         <button id="navbutton" class="navbtn">☰</button>
         <nav class = "nav">
-            <a href = "/resume/index.html">About Me</a>   
-            <a href = "/resume/Portfolio.html">Portfolio</a>
-            <a href = "/resume/Qual.html">Qualifications</a>
-            <a href = "/resume/Service.html">Service</a>
-            <a href = "/resume/AI.html">AI-Page</a>
+            <a href = "/index.html">About Me</a>   
+            <a href = "/Portfolio.html">Portfolio</a>
+            <a href = "/Qual.html">Qualifications</a>
+            <a href = "/Service.html">Service</a>
+            <a href = "/AI.html">AI-Page</a>
             <a><button id="flip-button">Flip Coin </button></a>
             <span></span>
         </nav>
@@ -46,9 +54,9 @@
         <img src ="YMSL.jpg" alt ="">
         <div class="serv-box1">
             <h2>YMSL Volunteering</h2>
-            <p>- 200+ hours volunteering for various non-profit organizations focused on helping people in need or educating future generations.</p> 
-            <p>- Graciously given multiple awards that showcase the heart and dedication to serve others. </p>
-            <p>- Organizations helped: Perot Museum, Metrocrest, Jewish Family Service, Bonton Farms, Feed My Starving Children, North Texas Food Bank, etc.</p>
+            <p> At YMSL, I accumulated 200+ hours volunteering for various non-profit organizations focused on helping people in need or educating future generations.
+                I have been graciously bestowed multiple awards showcasing my heart and dedication to serve others. </br>
+                Organizations helped: Perot Museum, Metrocrest, Jewish Family Service, Bonton Farms, Feed My Starving Children, North Texas Food Bank, etc.</p>
             <div class = "SLinks">
                 <p>
                     <a href="https://ymsl.org" target="_blank">Link: YMSL</a>
@@ -61,10 +69,7 @@
         <img src ="Tamu.png" alt ="">
         <div class="serv-box2">
             <h2>Undergraduate Teaching Assistant</h2>
-            <p>- Faciilitated a discrete mathematics course to undergraduate students through collaborating with the CSCE 222 professor</p> 
-            <p>- Built upon discrete mathematics concepts during biweekly office hours and review sessions for upcoming tests</p>
-            <p>- Aided the CSCE 222 professor by grading homework, quizzes, and tests</p>
-            <p>- Cultivated unique and challenging test questions to create a bank of test questions for future classes with the assistance of the department head. </p>
+            In this role, I worked as an Undergraduate Teaching Assistant in the Discrete Structures for Computing course at Texas A&M University (CSCE 222). Throughout the semester I fostered a productive learning environment for my students by hosting biweekly office hours, and review sessions. This gave me the opportunity to further my connections with driven, like-minded students and allowed them to excel in their studies. Additionally, I created an extensive review video containing relevant exam content utilized by many students in the class. I assisted the professor with grading tests, homework, and quizzes and provided positive, productive feedback to each student. My favorite part of this role was cultivating unique and challenging test questions for each exam that assessed the class's overall performance.
             <div class = "SLinks">
                 <p>
                     <a href="https://engineering.tamu.edu/cse/index.html" target="_blank">Link: Texas A&M Computer Science Website</a>
@@ -78,16 +83,19 @@
             <h2 class = "servtitle">
                 </span>SERVICE / SERVICE / SERVICE / SERVICE / SERVICE / SERVICE / SERVICE / SERVICE / </span> 
             </h2>
-            <div class = "chooser">
                 <div>
                     <article class = "serv_sect1">
                         <img src="YMSL.jpg" alt = "image" class = "portimg">
                         <h3 class = "servtitle">YMSL Volunteering</h3>
                         <p class="servdesc">
-                            - 200+ hours volunteering for various non-profit organizations focused on helping people in need or educating future generations.</br> 
-                            - Graciously given multiple awards that showcase the heart and dedication to serve others. </br>
-                            - Organizations helped: Perot Museum, Metrocrest, Jewish Family Service, Bonton Farms, Feed My Starving Children, North Texas Food Bank, etc.
-                        </p>
+                            At YMSL, I accumulated 200+ hours volunteering for various non-profit organizations focused on helping people in need or educating future generations.
+                                I have been graciously bestowed multiple awards showcasing my heart and dedication to serve others. </br>
+                                Organizations helped: Perot Museum, Metrocrest, Jewish Family Service, Bonton Farms, Feed My Starving Children, North Texas Food Bank, etc.</p>
+                                <div class = "SLinks2">
+                                    <p>
+                                        <a href="https://ymsl.org" target="_blank">Link: YMSL</a>
+                                    </p>
+                                </div>
                     </article>
 
                     <article class = "serv_sect2">
@@ -96,6 +104,11 @@
                         <p class="servdesc">
                             In this role, I worked as an Undergraduate Teaching Assistant in the Discrete Structures for Computing course at Texas A&M University (CSCE 222). Throughout the semester I fostered a productive learning environment for my students by hosting biweekly office hours, and review sessions. This gave me the opportunity to further my connections with driven, like-minded students and allowed them to excel in their studies. Additionally, I created an extensive review video containing relevant exam content utilized by many students in the class. I assisted the professor with grading tests, homework, and quizzes and provided positive, productive feedback to each student. My favorite part of this role was cultivating unique and challenging test questions for each exam that assessed the class's overall performance.
                         </p>
+                        <div class = "SLinks2">
+                            <p>
+                                <a href="https://engineering.tamu.edu/cse/index.html" target="_blank">Link: Texas A&M Computer Science Website</a>
+                            </p>
+                        </div>
                     </article>
                 </div>
             </div>
