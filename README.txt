@@ -2,4 +2,4 @@
 
 8/31/2024 - Finished mostly everything with second style except some touch ups on service / portfolio pages, need to implement qualifications and put full conversation from chatgpt (ai page) before finished with project!
 
-P.S: my website hates me (people.tamu) so I'll have to figure that out
+9/1/2024 - Finished all I wanted with second style up until career fair. Consistent style switch between webpages works locally but not on website for some reason, will try to fix later.
