@@ -3,6 +3,14 @@ let flip = document.querySelector("#flip-button");
 let theme = document.querySelector("link#theme");
 let x = false; // Keeps track of the current stylesheet
 
+window.onload = function() {
+    var themestore = localStorage.getItem("theme");
+    if (themestore) {
+        document.querySelector("link#theme").href = themestore;
+        x = themestore === "style2.css"; 
+    }
+};
+
 
 flip.addEventListener("click", () => {
     let i = Math.floor(Math.random() * 2);
